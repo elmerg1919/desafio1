@@ -24,7 +24,8 @@ namespace LoginBasic
         {
             string user = textUser.Text;
             string pass = textPass.Text;
-            string url = "C:\\Registro\\" + user + ".txt";
+            //en caso de no funcionar la parte del login solo cabiar esta parte a alguna carpeta que ustedes creen, de preferencia en la misma
+            string url = "C:\\Users\\ddeu1\\Source\\Repos\\desafio1\\registros\\" + user + ".txt";
 
             if (File.Exists(url))
             {
@@ -48,7 +49,7 @@ namespace LoginBasic
         {
             string user = textUser.Text;
             string pass = textPass.Text;
-            string url= "C:\\Registro\\" + user + ".txt";
+            string url= "C:\\Users\\ddeu1\\Source\\Repos\\desafio1\\registros\\" + user + ".txt";
 
             if (File.Exists(url))
             {
@@ -58,6 +59,9 @@ namespace LoginBasic
             if (pass.Equals(password)) //verifica si la contraseña es igual al archivo 
                 {
                     MessageBox.Show("BIENVENIDO");
+                    Form2 principal = new Form2();
+                    principal.Show();
+                    
                 }
                 else
                 {

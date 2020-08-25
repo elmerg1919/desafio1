@@ -17,6 +17,11 @@ namespace LoginBasic
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new welcom());
+            Form1 INICIO = new Form1();
+            if (INICIO.ShowDialog() == DialogResult.OK)
+            {
+                Application.Run(new Form1());
+            }
         }
     }
 }
