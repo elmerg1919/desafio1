@@ -32,5 +32,15 @@ namespace LoginBasic
             pictureBox1.ImageLocation = "C:/Users/ddeu1/Source/Repos/desafio1/imagenes/" + comboBox1.Text + ".jpg";
             
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            pictureBox2.ImageLocation = "C:/Users/ddeu1/Source/Repos/desafio1/imagenes/" + comboBox2.Text + ".jpg";
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            pictureBox3.ImageLocation = "C:/Users/ddeu1/Source/Repos/desafio1/imagenes/" + comboBox3.Text + ".jpg";
+        }
     }
 }

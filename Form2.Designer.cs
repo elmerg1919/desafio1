@@ -134,7 +134,7 @@
             this.comboBox2.Items.AddRange(new object[] {
             "HARRY POTTER",
             "GOOSEBUMPS",
-            "PERRY MANSON"});
+            "PERRY MASON"});
             this.comboBox2.Location = new System.Drawing.Point(34, 44);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(121, 29);
@@ -230,6 +230,7 @@
             this.pictureBox2.Location = new System.Drawing.Point(26, 176);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(156, 160);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 6;
             this.pictureBox2.TabStop = false;
             // 
@@ -261,6 +262,7 @@
             this.button2.TabIndex = 4;
             this.button2.Text = "Seleccionar";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // pictureBox3
             // 
@@ -268,6 +270,7 @@
             this.pictureBox3.Location = new System.Drawing.Point(26, 176);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(156, 160);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 6;
             this.pictureBox3.TabStop = false;
             // 
@@ -299,6 +302,7 @@
             this.button3.TabIndex = 4;
             this.button3.Text = "Seleccionar";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // Form2
             // 
