@@ -21,5 +21,16 @@ namespace LoginBasic
         {
 
         }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            pictureBox1.ImageLocation = "C:/Users/ddeu1/Source/Repos/desafio1/imagenes/" + comboBox1.Text + ".jpg";
+            
+        }
     }
 }
