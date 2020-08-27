@@ -30,7 +30,18 @@ namespace LoginBasic
         private void button1_Click(object sender, EventArgs e)
         {
             pictureBox1.ImageLocation = "C:/Users/ddeu1/Source/Repos/desafio1/imagenes/" + comboBox1.Text + ".jpg";
-            
+            if (comboBox1.SelectedItem.ToString() == "CHERNOBYL")
+            {
+                label1.Text = "EXPLOCION BIEN CABRONA ALV";
+            }
+            if (comboBox1.SelectedItem.ToString() == "GAME OF THRONES")
+            {
+                label1.Text = "JUEGO DE TRONOS";
+            }
+            if (comboBox1.SelectedItem.ToString() == "THE MARVELOUS MRS. MAISEL")
+            {
+                label1.Text = "Título en español: Juego de tronos";
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
