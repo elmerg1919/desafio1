@@ -55,13 +55,13 @@ namespace LoginBasic
         private void LlenarMatrizLenguaje() 
         {
             //Datos PHYTON
-            arreglo1[0, 0] = "Desarolladores: Python Software Foundation";
-            arreglo1[0, 1] = "Apareció en: 1991";
-            arreglo1[0, 2] = ".py, .pyc, .pyd, .pyo, .pyw, .pyz";
-            arreglo1[0, 3] = "Sistema Operativo: Multiplataforma";
-            arreglo1[0, 4] = "Última versión estable: 3.8.3";
-            arreglo1[0, 5] = "Licencia: Python Software Foundation License";
-            arreglo1[0, 6] = "Multiparadigma: orientado a objetos, imperativo, funcional,reflexivo";
+            arreglo[0, 0] = "Desarolladores: Python Software Foundation";
+            arreglo[0, 1] = "Apareció en: 1991";
+            arreglo[0, 2] = ".py, .pyc, .pyd, .pyo, .pyw, .pyz";
+            arreglo[0, 3] = "Sistema Operativo: Multiplataforma";
+            arreglo[0, 4] = "Última versión estable: 3.8.3";
+            arreglo[0, 5] = "Licencia: Python Software Foundation License";
+            arreglo[0, 6] = "Multiparadigma: orientado a objetos, imperativo, funcional,reflexivo";
         }
 
         private void LimpiarMatriz(string[,] matriz) 
@@ -73,26 +73,31 @@ namespace LoginBasic
                     matriz[i, j] = " ";
                 }
             }
+           
+        }
+
+        private void Limpiar() 
+        {
+            lsLen.Items.Clear();
+            lsProta.Items.Clear();
+            lsProtagonistas.Items.Clear();
         }
         private void tabPage1_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
+            LimpiarMatriz(arreglo);
+
             LlenarMatrizProgramas();
             string elemento = string.Empty;
             lblImg.ImageIndex = comboBox1.SelectedIndex;
           
             if (comboBox1.SelectedItem.ToString() == "CHERNOBYL")
             {
-
+                Limpiar();
                 label1.Text = arreglo[1, 0].ToString();
                 label4.Text = arreglo[1, 1].ToString();
                 string[] protas = arreglo[1, 2].ToString().Split(',');
@@ -110,6 +115,7 @@ namespace LoginBasic
             }
             if (comboBox1.SelectedItem.ToString() == "GAME OF THRONES")
             {
+                Limpiar();
                 label1.Text = arreglo[0, 0].ToString();
                 label4.Text = arreglo[0, 1].ToString();
                 string[] protas1 = arreglo[0, 2].ToString().Split(',');
@@ -127,6 +133,7 @@ namespace LoginBasic
             }
             if (comboBox1.SelectedItem.ToString() == "THE MARVELOUS MRS. MAISEL")
             {
+                Limpiar();
                 label1.Text = arreglo[2, 0].ToString();
                 label4.Text = arreglo[2, 1].ToString();
                 string[] protas2 = arreglo[2, 2].ToString().Split(',');
@@ -152,6 +159,7 @@ namespace LoginBasic
         private void button3_Click(object sender, EventArgs e)
         {
             LimpiarMatriz(arreglo);
+
             LlenarMatrizLenguaje();
             string elemento = string.Empty;
 
@@ -159,8 +167,8 @@ namespace LoginBasic
 
             if (comboBox3.SelectedItem.ToString()== "PYTHON")
             {
-                label21.Text = arreglo[0, 0].ToString();
-                label20.Text = arreglo[0, 1].ToString();
+                lbDesa.Text = arreglo[0, 0].ToString();
+                lbApa.Text = arreglo[0, 1].ToString();
                 string[] ext = arreglo[0, 2].ToString().Split(',');
                 for (int i = 0; i < ext.Length; i++)
                 {
@@ -169,9 +177,9 @@ namespace LoginBasic
                     elemento = "";
                 }
 
-                label18.Text = arreglo[0, 3].ToString();
-                label17.Text = arreglo[0, 4].ToString();
-                label3.Text = arreglo[0, 5].ToString();
+                lbSO.Text = arreglo[0, 3].ToString();
+                lbUltima.Text = arreglo[0, 4].ToString();
+                lbLicencia.Text = arreglo[0, 5].ToString();
                 txtPar.Text = arreglo[0, 6].ToString();
             }
         }

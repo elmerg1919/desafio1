@@ -33,15 +33,41 @@
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.lblImgLeng = new System.Windows.Forms.Label();
+            this.ilsLenguajes = new System.Windows.Forms.ImageList(this.components);
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.txtPar = new System.Windows.Forms.TextBox();
+            this.lsLen = new System.Windows.Forms.ListBox();
+            this.lbLicencia = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.lbUltima = new System.Windows.Forms.Label();
+            this.lbSO = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.lbApa = new System.Windows.Forms.Label();
+            this.lbDesa = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.lblImgLibros = new System.Windows.Forms.Label();
+            this.ilsLibros = new System.Windows.Forms.ImageList(this.components);
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.lsProtagonistas = new System.Windows.Forms.ListBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.lblImg = new System.Windows.Forms.Label();
+            this.ilsProgramas = new System.Windows.Forms.ImageList(this.components);
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtSip = new System.Windows.Forms.TextBox();
+            this.lsProta = new System.Windows.Forms.ListBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -52,32 +78,6 @@
             this.button1 = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.ilsProgramas = new System.Windows.Forms.ImageList(this.components);
-            this.lblImg = new System.Windows.Forms.Label();
-            this.lblImgLibros = new System.Windows.Forms.Label();
-            this.ilsLibros = new System.Windows.Forms.ImageList(this.components);
-            this.lblImgLeng = new System.Windows.Forms.Label();
-            this.ilsLenguajes = new System.Windows.Forms.ImageList(this.components);
-            this.lsProta = new System.Windows.Forms.ListBox();
-            this.txtSip = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.txtPar = new System.Windows.Forms.TextBox();
-            this.lsLen = new System.Windows.Forms.ListBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
             this.tabPage4.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -125,23 +125,119 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Lenguajes de programacion";
             // 
+            // lblImgLeng
+            // 
+            this.lblImgLeng.ImageList = this.ilsLenguajes;
+            this.lblImgLeng.Location = new System.Drawing.Point(26, 186);
+            this.lblImgLeng.Name = "lblImgLeng";
+            this.lblImgLeng.Size = new System.Drawing.Size(256, 256);
+            this.lblImgLeng.TabIndex = 7;
+            // 
+            // ilsLenguajes
+            // 
+            this.ilsLenguajes.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ilsLenguajes.ImageStream")));
+            this.ilsLenguajes.TransparentColor = System.Drawing.Color.Transparent;
+            this.ilsLenguajes.Images.SetKeyName(0, "PYTHON.jpg");
+            this.ilsLenguajes.Images.SetKeyName(1, "JAVA.jpg");
+            this.ilsLenguajes.Images.SetKeyName(2, "JAVASCRIPT.jpg");
+            // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.txtPar);
             this.groupBox3.Controls.Add(this.lsLen);
-            this.groupBox3.Controls.Add(this.label3);
+            this.groupBox3.Controls.Add(this.lbLicencia);
             this.groupBox3.Controls.Add(this.label16);
-            this.groupBox3.Controls.Add(this.label17);
-            this.groupBox3.Controls.Add(this.label18);
+            this.groupBox3.Controls.Add(this.lbUltima);
+            this.groupBox3.Controls.Add(this.lbSO);
             this.groupBox3.Controls.Add(this.label19);
-            this.groupBox3.Controls.Add(this.label20);
-            this.groupBox3.Controls.Add(this.label21);
+            this.groupBox3.Controls.Add(this.lbApa);
+            this.groupBox3.Controls.Add(this.lbDesa);
             this.groupBox3.Location = new System.Drawing.Point(318, 38);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(530, 536);
             this.groupBox3.TabIndex = 5;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "groupBox3";
+            // 
+            // txtPar
+            // 
+            this.txtPar.Location = new System.Drawing.Point(145, 370);
+            this.txtPar.Multiline = true;
+            this.txtPar.Name = "txtPar";
+            this.txtPar.Size = new System.Drawing.Size(344, 136);
+            this.txtPar.TabIndex = 26;
+            // 
+            // lsLen
+            // 
+            this.lsLen.FormattingEnabled = true;
+            this.lsLen.ItemHeight = 21;
+            this.lsLen.Location = new System.Drawing.Point(182, 122);
+            this.lsLen.Name = "lsLen";
+            this.lsLen.Size = new System.Drawing.Size(172, 130);
+            this.lsLen.TabIndex = 25;
+            // 
+            // lbLicencia
+            // 
+            this.lbLicencia.AutoSize = true;
+            this.lbLicencia.Location = new System.Drawing.Point(42, 336);
+            this.lbLicencia.Name = "lbLicencia";
+            this.lbLicencia.Size = new System.Drawing.Size(89, 21);
+            this.lbLicencia.TabIndex = 24;
+            this.lbLicencia.Text = "Episodios:";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(42, 370);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(96, 21);
+            this.label16.TabIndex = 23;
+            this.label16.Text = "Paradigma:";
+            // 
+            // lbUltima
+            // 
+            this.lbUltima.AutoSize = true;
+            this.lbUltima.Location = new System.Drawing.Point(42, 303);
+            this.lbUltima.Name = "lbUltima";
+            this.lbUltima.Size = new System.Drawing.Size(108, 21);
+            this.lbUltima.TabIndex = 22;
+            this.lbUltima.Text = "Temporadas:";
+            // 
+            // lbSO
+            // 
+            this.lbSO.AutoSize = true;
+            this.lbSO.Location = new System.Drawing.Point(42, 268);
+            this.lbSO.Name = "lbSO";
+            this.lbSO.Size = new System.Drawing.Size(124, 21);
+            this.lbSO.TabIndex = 21;
+            this.lbSO.Text = "Pais de origen:";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(42, 122);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(107, 21);
+            this.label19.TabIndex = 20;
+            this.label19.Text = "Extensiones:";
+            // 
+            // lbApa
+            // 
+            this.lbApa.AutoSize = true;
+            this.lbApa.Location = new System.Drawing.Point(42, 81);
+            this.lbApa.Name = "lbApa";
+            this.lbApa.Size = new System.Drawing.Size(98, 21);
+            this.lbApa.TabIndex = 19;
+            this.lbApa.Text = "Creado por:";
+            // 
+            // lbDesa
+            // 
+            this.lbDesa.AutoSize = true;
+            this.lbDesa.Location = new System.Drawing.Point(42, 30);
+            this.lbDesa.Name = "lbDesa";
+            this.lbDesa.Size = new System.Drawing.Size(149, 21);
+            this.lbDesa.TabIndex = 18;
+            this.lbDesa.Text = "Titulo en Español:";
             // 
             // button3
             // 
@@ -182,10 +278,27 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Libros";
             // 
+            // lblImgLibros
+            // 
+            this.lblImgLibros.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.lblImgLibros.ImageList = this.ilsLibros;
+            this.lblImgLibros.Location = new System.Drawing.Point(30, 138);
+            this.lblImgLibros.Name = "lblImgLibros";
+            this.lblImgLibros.Size = new System.Drawing.Size(256, 256);
+            this.lblImgLibros.TabIndex = 6;
+            // 
+            // ilsLibros
+            // 
+            this.ilsLibros.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ilsLibros.ImageStream")));
+            this.ilsLibros.TransparentColor = System.Drawing.Color.Transparent;
+            this.ilsLibros.Images.SetKeyName(0, "HARRY POTTER.jpg");
+            this.ilsLibros.Images.SetKeyName(1, "GOOSEBUMPS.jpg");
+            this.ilsLibros.Images.SetKeyName(2, "PERRY MASON.jpg");
+            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.textBox1);
-            this.groupBox2.Controls.Add(this.listBox1);
+            this.groupBox2.Controls.Add(this.lsProtagonistas);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.label10);
             this.groupBox2.Controls.Add(this.label11);
@@ -199,6 +312,86 @@
             this.groupBox2.TabIndex = 5;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "groupBox2";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(146, 376);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(344, 136);
+            this.textBox1.TabIndex = 17;
+            // 
+            // lsProtagonistas
+            // 
+            this.lsProtagonistas.FormattingEnabled = true;
+            this.lsProtagonistas.ItemHeight = 21;
+            this.lsProtagonistas.Location = new System.Drawing.Point(183, 128);
+            this.lsProtagonistas.Name = "lsProtagonistas";
+            this.lsProtagonistas.Size = new System.Drawing.Size(172, 130);
+            this.lsProtagonistas.TabIndex = 16;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(43, 342);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(89, 21);
+            this.label2.TabIndex = 15;
+            this.label2.Text = "Episodios:";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(43, 376);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(80, 21);
+            this.label10.TabIndex = 14;
+            this.label10.Text = "Sinopsis:";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(43, 309);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(108, 21);
+            this.label11.TabIndex = 13;
+            this.label11.Text = "Temporadas:";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(43, 274);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(124, 21);
+            this.label12.TabIndex = 12;
+            this.label12.Text = "Pais de origen:";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(43, 128);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(119, 21);
+            this.label13.TabIndex = 11;
+            this.label13.Text = "Protagonistas:";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(43, 87);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(98, 21);
+            this.label14.TabIndex = 10;
+            this.label14.Text = "Creado por:";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(43, 36);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(149, 21);
+            this.label15.TabIndex = 9;
+            this.label15.Text = "Titulo en Español:";
             // 
             // button2
             // 
@@ -240,6 +433,22 @@
             this.tabPage1.Text = "Programas de Entretenimiento ";
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
+            // lblImg
+            // 
+            this.lblImg.ImageList = this.ilsProgramas;
+            this.lblImg.Location = new System.Drawing.Point(22, 135);
+            this.lblImg.Name = "lblImg";
+            this.lblImg.Size = new System.Drawing.Size(256, 256);
+            this.lblImg.TabIndex = 3;
+            // 
+            // ilsProgramas
+            // 
+            this.ilsProgramas.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ilsProgramas.ImageStream")));
+            this.ilsProgramas.TransparentColor = System.Drawing.Color.Transparent;
+            this.ilsProgramas.Images.SetKeyName(0, "GOT.jpg");
+            this.ilsProgramas.Images.SetKeyName(1, "CHER.jpg");
+            this.ilsProgramas.Images.SetKeyName(2, "TMMM.jpg");
+            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.txtSip);
@@ -257,6 +466,23 @@
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos";
+            // 
+            // txtSip
+            // 
+            this.txtSip.Location = new System.Drawing.Point(151, 400);
+            this.txtSip.Multiline = true;
+            this.txtSip.Name = "txtSip";
+            this.txtSip.Size = new System.Drawing.Size(344, 136);
+            this.txtSip.TabIndex = 8;
+            // 
+            // lsProta
+            // 
+            this.lsProta.FormattingEnabled = true;
+            this.lsProta.ItemHeight = 21;
+            this.lsProta.Location = new System.Drawing.Point(188, 152);
+            this.lsProta.Name = "lsProta";
+            this.lsProta.Size = new System.Drawing.Size(172, 130);
+            this.lsProta.TabIndex = 7;
             // 
             // label9
             // 
@@ -343,7 +569,6 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 29);
             this.comboBox1.TabIndex = 0;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // tabControl1
             // 
@@ -358,232 +583,6 @@
             this.tabControl1.Size = new System.Drawing.Size(871, 626);
             this.tabControl1.SizeMode = System.Windows.Forms.TabSizeMode.FillToRight;
             this.tabControl1.TabIndex = 0;
-            // 
-            // ilsProgramas
-            // 
-            this.ilsProgramas.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ilsProgramas.ImageStream")));
-            this.ilsProgramas.TransparentColor = System.Drawing.Color.Transparent;
-            this.ilsProgramas.Images.SetKeyName(0, "GOT.jpg");
-            this.ilsProgramas.Images.SetKeyName(1, "CHER.jpg");
-            this.ilsProgramas.Images.SetKeyName(2, "TMMM.jpg");
-            // 
-            // lblImg
-            // 
-            this.lblImg.ImageList = this.ilsProgramas;
-            this.lblImg.Location = new System.Drawing.Point(22, 135);
-            this.lblImg.Name = "lblImg";
-            this.lblImg.Size = new System.Drawing.Size(256, 256);
-            this.lblImg.TabIndex = 3;
-            // 
-            // lblImgLibros
-            // 
-            this.lblImgLibros.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.lblImgLibros.ImageList = this.ilsLibros;
-            this.lblImgLibros.Location = new System.Drawing.Point(30, 138);
-            this.lblImgLibros.Name = "lblImgLibros";
-            this.lblImgLibros.Size = new System.Drawing.Size(256, 256);
-            this.lblImgLibros.TabIndex = 6;
-            // 
-            // ilsLibros
-            // 
-            this.ilsLibros.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ilsLibros.ImageStream")));
-            this.ilsLibros.TransparentColor = System.Drawing.Color.Transparent;
-            this.ilsLibros.Images.SetKeyName(0, "HARRY POTTER.jpg");
-            this.ilsLibros.Images.SetKeyName(1, "GOOSEBUMPS.jpg");
-            this.ilsLibros.Images.SetKeyName(2, "PERRY MASON.jpg");
-            // 
-            // lblImgLeng
-            // 
-            this.lblImgLeng.ImageList = this.ilsLenguajes;
-            this.lblImgLeng.Location = new System.Drawing.Point(26, 186);
-            this.lblImgLeng.Name = "lblImgLeng";
-            this.lblImgLeng.Size = new System.Drawing.Size(256, 256);
-            this.lblImgLeng.TabIndex = 7;
-            // 
-            // ilsLenguajes
-            // 
-            this.ilsLenguajes.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ilsLenguajes.ImageStream")));
-            this.ilsLenguajes.TransparentColor = System.Drawing.Color.Transparent;
-            this.ilsLenguajes.Images.SetKeyName(0, "PYTHON.jpg");
-            this.ilsLenguajes.Images.SetKeyName(1, "JAVA.jpg");
-            this.ilsLenguajes.Images.SetKeyName(2, "JAVASCRIPT.jpg");
-            // 
-            // lsProta
-            // 
-            this.lsProta.FormattingEnabled = true;
-            this.lsProta.ItemHeight = 21;
-            this.lsProta.Location = new System.Drawing.Point(188, 152);
-            this.lsProta.Name = "lsProta";
-            this.lsProta.Size = new System.Drawing.Size(172, 130);
-            this.lsProta.TabIndex = 7;
-            // 
-            // txtSip
-            // 
-            this.txtSip.Location = new System.Drawing.Point(151, 400);
-            this.txtSip.Multiline = true;
-            this.txtSip.Name = "txtSip";
-            this.txtSip.Size = new System.Drawing.Size(344, 136);
-            this.txtSip.TabIndex = 8;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(146, 376);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(344, 136);
-            this.textBox1.TabIndex = 17;
-            // 
-            // listBox1
-            // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 21;
-            this.listBox1.Location = new System.Drawing.Point(183, 128);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(172, 130);
-            this.listBox1.TabIndex = 16;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(43, 342);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(89, 21);
-            this.label2.TabIndex = 15;
-            this.label2.Text = "Episodios:";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(43, 376);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(80, 21);
-            this.label10.TabIndex = 14;
-            this.label10.Text = "Sinopsis:";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(43, 309);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(108, 21);
-            this.label11.TabIndex = 13;
-            this.label11.Text = "Temporadas:";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(43, 274);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(124, 21);
-            this.label12.TabIndex = 12;
-            this.label12.Text = "Pais de origen:";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(43, 128);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(119, 21);
-            this.label13.TabIndex = 11;
-            this.label13.Text = "Protagonistas:";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(43, 87);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(98, 21);
-            this.label14.TabIndex = 10;
-            this.label14.Text = "Creado por:";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(43, 36);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(149, 21);
-            this.label15.TabIndex = 9;
-            this.label15.Text = "Titulo en Español:";
-            // 
-            // txtPar
-            // 
-            this.txtPar.Location = new System.Drawing.Point(145, 370);
-            this.txtPar.Multiline = true;
-            this.txtPar.Name = "txtPar";
-            this.txtPar.Size = new System.Drawing.Size(344, 136);
-            this.txtPar.TabIndex = 26;
-            // 
-            // lsLen
-            // 
-            this.lsLen.FormattingEnabled = true;
-            this.lsLen.ItemHeight = 21;
-            this.lsLen.Location = new System.Drawing.Point(182, 122);
-            this.lsLen.Name = "lsLen";
-            this.lsLen.Size = new System.Drawing.Size(172, 130);
-            this.lsLen.TabIndex = 25;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(42, 336);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(89, 21);
-            this.label3.TabIndex = 24;
-            this.label3.Text = "Episodios:";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(42, 370);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(96, 21);
-            this.label16.TabIndex = 23;
-            this.label16.Text = "Paradigma:";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(42, 303);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(108, 21);
-            this.label17.TabIndex = 22;
-            this.label17.Text = "Temporadas:";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(42, 268);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(124, 21);
-            this.label18.TabIndex = 21;
-            this.label18.Text = "Pais de origen:";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(42, 122);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(107, 21);
-            this.label19.TabIndex = 20;
-            this.label19.Text = "Extensiones:";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(42, 81);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(98, 21);
-            this.label20.TabIndex = 19;
-            this.label20.Text = "Creado por:";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(42, 30);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(149, 21);
-            this.label21.TabIndex = 18;
-            this.label21.Text = "Titulo en Español:";
             // 
             // Form2
             // 
@@ -646,7 +645,7 @@
         private System.Windows.Forms.ListBox lsProta;
         private System.Windows.Forms.TextBox txtSip;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox lsProtagonistas;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
@@ -656,12 +655,12 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox txtPar;
         private System.Windows.Forms.ListBox lsLen;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lbLicencia;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label lbUltima;
+        private System.Windows.Forms.Label lbSO;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label lbApa;
+        private System.Windows.Forms.Label lbDesa;
     }
 }
