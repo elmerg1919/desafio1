@@ -13,65 +13,86 @@ namespace LoginBasic
 {
     public partial class Form1 : Form
     {
+        private Dictionary<string, string> users= new Dictionary<string, string>();
         public Form1()
         {
             InitializeComponent();
         }
 
-        string password;
+        public bool isEmpty(string cadena) 
+        {
+            if (cadena.Length == 0) { return true; }
+            else { return false; }
+        }
 
         private void buttonRegistro_Click(object sender, EventArgs e)
         {
+           
             string user = textUser.Text;
             string pass = textPass.Text;
-            //en caso de no funcionar la parte del login solo cabiar esta parte a alguna carpeta que ustedes creen, de preferencia en la misma
-            string url = "C:\\Users\\ddeu1\\Source\\Repos\\desafio1\\registros\\" + user + ".txt";
 
-            if (File.Exists(url))
+            if (isEmpty(textUser.Text))
             {
-                MessageBox.Show("ERROR.  Usuario ya existe!");
-                textUser.Clear();
-                textUser.Clear();
+                MessageBox.Show("Usuario invalido, no puede estar vacío", "Usuario vacío", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textUser.Text = "";
+                textUser.Focus();
+            }
+            else if (isEmpty(textPass.Text))
+            {
+                MessageBox.Show("Usuario invalido, no puede estar vacio", "Contraseña vacía", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textPass.Text = "";
+                textPass.Focus();
             }
             else
             {
-                File.WriteAllText(url, pass);
-                /*CREA UN NUEVO ARCHIVO CON ESE NOMBRE Y GUARDA DENTRO DEL ARCHIVO EL VAOR DEL SEGUNDO PARAMETRO*/
-                MessageBox.Show("Usuario registrado!");
-                textUser.Clear();
-                textPass.Clear();
-
+                if (users.Keys.Contains(user))
+                {
+                    MessageBox.Show("Usuario ya existente", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    textUser.Text = "";
+                    textPass.Text = "";
+                    textUser.Focus();
+                }
+                else
+                {
+                    users.Add(user, pass);
+                    MessageBox.Show("Usuario ingresado exitosamente" + "\nPuede iniciar sesion", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    textUser.Text = "";
+                    textPass.Text = "";
+                    textUser.Focus();
+                }
             }
-                
+                            
         }
 
         private void buttonIngreso_Click(object sender, EventArgs e)
         {
             string user = textUser.Text;
             string pass = textPass.Text;
-            string url= "C:\\Users\\ddeu1\\Source\\Repos\\desafio1\\registros\\" + user + ".txt";
 
-            if (File.Exists(url))
+            if (users.Keys.Contains(user))
             {
-                password = File.ReadAllText(url);
-              //LEE EL TEXTO ALMACENADO DENTRO DEL ARCHIVO 
-
-            if (pass.Equals(password)) //verifica si la contraseña es igual al archivo 
+                for (int i = 0; i < users.Count; i++)
                 {
-                    MessageBox.Show("BIENVENIDO");
-                    Form2 principal = new Form2();
-                    principal.Show();
-                    
-                }
-                else
-                {
-                    MessageBox.Show("CONTRASEÑA INCORRECTA");
+                    var item = users.ElementAt(i);
+                    if (user == item.Key)
+                    {
+                        if (item.Value==pass)
+                        {
+                             MessageBox.Show("Bienvenido " + user, "Ingreso correcto", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            Form2 principal = new Form2();
+                            principal.Show();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Contraseña Incorrecta", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
                 }
             }
+
             else
             {
-                MessageBox.Show("USUARIO INCORRECTO");
-                
+                MessageBox.Show("Usuario Incorrecto", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

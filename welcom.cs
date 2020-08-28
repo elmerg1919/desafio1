@@ -16,7 +16,7 @@ namespace LoginBasic
         {
             InitializeComponent();
             timer1.Enabled = true;
-            timer1.Interval = 15000;
+            timer1.Interval = 1000;
 
         }
 
